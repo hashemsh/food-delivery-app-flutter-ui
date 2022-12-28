@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle:
                 SystemUiOverlayStyle(statusBarColor: Colors.deepOrangeAccent),
           ),
-          scaffoldBackgroundColor: Colors.grey[50],
+          scaffoldBackgroundColor: Colors.grey[100],
           primaryColor: Colors.deepOrangeAccent,
           primarySwatch: Colors.deepOrange),
       home: HomeScreen(),
