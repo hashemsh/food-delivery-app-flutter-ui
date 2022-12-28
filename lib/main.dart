@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Food Delivery UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-          systemOverlayStyle:
-              SystemUiOverlayStyle(statusBarColor: Colors.deepOrangeAccent),
-        ),
-        scaffoldBackgroundColor: Colors.grey[50],
-        primaryColor: Colors.deepOrangeAccent,
-      ),
+          appBarTheme: const AppBarTheme(
+            systemOverlayStyle:
+                SystemUiOverlayStyle(statusBarColor: Colors.deepOrangeAccent),
+          ),
+          scaffoldBackgroundColor: Colors.grey[50],
+          primaryColor: Colors.deepOrangeAccent,
+          primarySwatch: Colors.deepOrange),
       home: HomeScreen(),
     );
   }
