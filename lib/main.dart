@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           appBarTheme: const AppBarTheme(
             systemOverlayStyle:
-                SystemUiOverlayStyle(statusBarColor: Colors.deepOrangeAccent),
+                SystemUiOverlayStyle(statusBarColor: Colors.transparent),
           ),
           scaffoldBackgroundColor: Colors.grey[100],
           primaryColor: Colors.deepOrangeAccent,
