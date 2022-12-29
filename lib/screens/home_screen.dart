@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/data/data.dart';
 import 'package:food_delivery_app/models/restaurant.dart';
@@ -108,6 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       appBar: AppBar(
         backgroundColor: Colors.deepOrangeAccent,
         centerTitle: true,
@@ -180,8 +182,39 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               _buildRestaurants(),
             ],
+          ),
+          SizedBox(
+            height: 20.0,
           )
         ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        height: 70.0,
+        backgroundColor: Colors.transparent,
+        buttonBackgroundColor: Colors.deepOrangeAccent,
+        animationCurve: Curves.easeInOut,
+        animationDuration: Duration(milliseconds: 500),
+        color: Colors.deepOrangeAccent,
+        items: <Widget>[
+          Icon(
+            Icons.restaurant,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.person,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.fact_check_outlined,
+            size: 30,
+            color: Colors.white,
+          ),
+        ],
+        onTap: (index) {
+          //Handle button tap
+        },
       ),
     );
   }
