@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:food_delivery_app/screens/home_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.grey[100],
           primaryColor: Colors.deepOrangeAccent,
           primarySwatch: Colors.deepOrange),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
